@@ -4,11 +4,11 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	console.log(data.lastFlightDate);
+	console.log(data.latestFlight);
 	let difference: string;
-	if (data.lastFlightDate) {
-		const now = new Date();
-		difference = formatDistance(data.lastFlightDate, now, { addSuffix: true });
+	if (data.latestFlight) {
+		// const now = new Date();
+		// difference = formatDistance(new Date(data.latestFlight), now, { addSuffix: true });
 
 		console.log(difference);
 	}
