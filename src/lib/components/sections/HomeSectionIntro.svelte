@@ -1,8 +1,4 @@
 <script lang="ts">
-	import FooterMain from '../lib/components/FooterMain.svelte';
-
-	import SeeMoreLink from '$lib/components/SeeMoreLink.svelte';
-	import HeaderHome from '$lib/components/header/HeaderHome.svelte';
 </script>
 
 <section id="intro" class="mx-auto max-w-screen-md pt-40 text-3xl leading-normal">
@@ -17,4 +13,3 @@
 	</p>
 	<p class="text-base uppercase opacity-40">This is where you keep scrolling to find out more...</p>
 </section>
-

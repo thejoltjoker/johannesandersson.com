@@ -1,12 +1,10 @@
 <script lang="ts">
-	import HeaderSingle from '$lib/components/header/HeaderSingle.svelte';
-	import type { PageData } from '../../dev/$types';
 	import _ from 'lodash';
-	import DevSkillsSection from '$lib/components/sections/dev/DevSkillsSection.svelte';
-	import DevProjectOffload from '$lib/components/sections/dev/DevProjectOffload.svelte';
-	import DevGithubSection from '$lib/components/sections/dev/DevGithubSection.svelte';
+	import DevGithubSection from './components/DevGithubSection.svelte';
+	import DevProjectOffload from './components/DevProjectOffload.svelte';
+	import DevSkillsSection from './components/DevSkillsSection.svelte';
+	import HeaderSingle from '$lib/components/header/HeaderSingle.svelte';
 
-	
 	interface ResumeDevSkills {
 		language: string[];
 		frontend: string[];

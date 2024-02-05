@@ -1,10 +1,5 @@
 <script lang="ts">
-  import HomeSectionIntro from './HomeSectionIntro.svelte';
-
-	import FooterMain from '../lib/components/FooterMain.svelte';
-
 	import SeeMoreLink from '$lib/components/SeeMoreLink.svelte';
-	import HeaderHome from '$lib/components/header/HeaderHome.svelte';
 </script>
 
 <section
@@ -20,4 +15,3 @@
 		<SeeMoreLink url="/dit" />
 	</div>
 </section>
-

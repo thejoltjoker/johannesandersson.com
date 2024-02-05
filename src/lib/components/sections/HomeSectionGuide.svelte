@@ -1,14 +1,5 @@
 <script lang="ts">
-  import HomeSectionDev from './HomeSectionDev.svelte';
-
-  import HomeSectionFilm from './HomeSectionFilm.svelte';
-
-  import HomeSectionIntro from './HomeSectionIntro.svelte';
-
-	import FooterMain from '../lib/components/FooterMain.svelte';
-
 	import SeeMoreLink from '$lib/components/SeeMoreLink.svelte';
-	import HeaderHome from '$lib/components/header/HeaderHome.svelte';
 </script>
 
 <section id="guide" class="mx-auto max-w-screen-md pt-32 text-3xl leading-normal">
@@ -21,4 +12,3 @@
 	</p>
 	<SeeMoreLink url="/guide" />
 </section>
-
