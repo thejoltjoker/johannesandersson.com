@@ -5,9 +5,9 @@ import _ from 'lodash';
 import type { PageLoad } from './$types';
 
 const getLatestFlightDate = async (): Promise<Date | undefined> => {
-	const url = 'https://flightlog.org/fl.html?l=1&a=28&user_id=11944';
-	// const flightlogUrl = 'https://flightlog.org/fl.html?l=1&a=28&user_id=11944';
-	// const url = 'https://corsproxy.io/?' + encodeURIComponent(flightlogUrl);
+	// const url = 'https://flightlog.org/fl.html?l=1&a=28&user_id=11944';
+	const flightlogUrl = 'https://flightlog.org/fl.html?l=1&a=28&user_id=11944';
+	const url = 'https://corsproxy.io/?' + encodeURIComponent(flightlogUrl);
 
 	try {
 		const res = await axios.get(url);
