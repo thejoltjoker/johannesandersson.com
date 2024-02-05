@@ -1,0 +1,33 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-almost-black font-sans text-white;
+}
+
+p {
+	@apply leading-normal;
+}
+
+a {
+	@apply transition;
+}
+
+@layer {
+	.bg-story {
+		@apply bg-cover bg-center;
+	}
+
+	.grid-section-mid {
+		@apply col-span-full sm:col-span-12 sm:col-start-3 md:col-span-10 md:col-start-4 xl:col-span-6 xl:col-start-6;
+	}
+
+	.grid-main {
+		@apply grid grid-cols-main gap-4 px-4;
+	}
+}
