@@ -6,7 +6,7 @@
 	import DevProjectOffload from '$lib/components/sections/dev/DevProjectOffload.svelte';
 	import DevGithubSection from '$lib/components/sections/dev/DevGithubSection.svelte';
 
-	// const repos = _.slice(_.orderBy(data.github.repos, ['updated_at'], ['desc']), 0, 6);
+	
 	interface ResumeDevSkills {
 		language: string[];
 		frontend: string[];

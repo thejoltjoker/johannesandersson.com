@@ -13,7 +13,8 @@
 				throw new Error(`Failed to fetch repos: ${response.statusText}`);
 			}
 
-			repos = await response.json();
+			const data = await response.json();
+			repos = _.slice(_.orderBy(data.github.repos, ['updated_at'], ['desc']), 0, 6);
 		} catch (error) {
 			console.error(error.message);
 			throw error;
