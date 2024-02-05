@@ -1,8 +1,4 @@
 <script lang="ts">
-	import DevGithubSection from '../../lib/components/DevGithubSection.svelte';
-
-	import HeaderSingle from '$lib/components/header/HeaderSingle.svelte';
-	import type { PageData } from './$types';
 	import _ from 'lodash';
 
 	// const repos = _.slice(_.orderBy(data.github.repos, ['updated_at'], ['desc']), 0, 6);
@@ -50,7 +46,7 @@
 		<div class="col-span-full grid grid-cols-12 2xl:col-span-full 2xl:col-start-3">
 			{#each Object.keys(skills) as skill, i}
 				<div class="col-span-full pt-6 sm:col-span-6 md:col-span-3">
-					<p class="text-teal-400">{_.padStart(i + 1, 2, 0)}.</p>
+					<p class="text-teal-400">{_.padStart(`${i + 1}`, 2, '0')}.</p>
 					<h5 class="pb-3 text-3xl">{_.startCase(skill)}</h5>
 					<ul>
 						{#each _.get(skills, skill).sort() as item}

@@ -164,18 +164,3 @@
 	</p>
 	<p class="text-base uppercase opacity-40">This is where you keep scrolling to find out more...</p>
 </footer>
-
-<style lang="postcss">
-	.chapters {
-		mask-image: linear-gradient(
-			90deg,
-			rgba(0, 0, 0, 0) 0%,
-			rgba(0, 0, 0, 1) 33%,
-			rgba(0, 0, 0, 1) 67%,
-			rgba(0, 0, 0, 0) 100%
-		);
-	}
-	.active {
-		@apply opacity-100;
-	}
-</style>

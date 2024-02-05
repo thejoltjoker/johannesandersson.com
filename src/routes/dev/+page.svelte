@@ -1,13 +1,10 @@
 <script lang="ts">
-	import DevProjectOffload from './DevProjectOffload.svelte';
-
-	import DevSkillsSection from './DevSkillsSection.svelte';
-
-	import DevGithubSection from '../../lib/components/DevGithubSection.svelte';
-
 	import HeaderSingle from '$lib/components/header/HeaderSingle.svelte';
 	import type { PageData } from './$types';
 	import _ from 'lodash';
+	import DevSkillsSection from '$lib/components/sections/dev/DevSkillsSection.svelte';
+	import DevProjectOffload from '$lib/components/sections/dev/DevProjectOffload.svelte';
+	import DevGithubSection from '$lib/components/sections/dev/DevGithubSection.svelte';
 
 	// const repos = _.slice(_.orderBy(data.github.repos, ['updated_at'], ['desc']), 0, 6);
 	interface ResumeDevSkills {
@@ -65,5 +62,5 @@
 <DevSkillsSection />
 
 <!-- Github -->
-<!-- <DevGithubSection /> -->
+<DevGithubSection />
 <div class="py-[50vh]"></div>
