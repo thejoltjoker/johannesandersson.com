@@ -59,7 +59,7 @@
 								{repo.stargazers_count}
 							</p>
 						</div>
-						<h6 class="mb-3 text-xl font-medium">{_.startCase(repo.name)}</h6>
+						<h6 class="mb-3 text-xl font-medium">{repo.name}</h6>
 
 						<p class="mb-3 text-lg">{repo.description ?? 'No description.'}</p>
 					</div>

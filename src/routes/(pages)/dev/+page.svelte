@@ -1,6 +1,6 @@
 <script lang="ts">
 	import HeaderSingle from '$lib/components/header/HeaderSingle.svelte';
-	import type { PageData } from './$types';
+	import type { PageData } from '../../dev/$types';
 	import _ from 'lodash';
 	import DevSkillsSection from '$lib/components/sections/dev/DevSkillsSection.svelte';
 	import DevProjectOffload from '$lib/components/sections/dev/DevProjectOffload.svelte';
